@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C83A072298F61D008489A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A062298F61D008489A8 /* AppDelegate.swift */; };
+		03C83A092298F61D008489A8 /* PolygonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A082298F61D008489A8 /* PolygonListViewController.swift */; };
+		03C83A0C2298F61D008489A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C83A0A2298F61D008489A8 /* Main.storyboard */; };
+		03C83A0F2298F61D008489A8 /* PathMorpher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A0D2298F61D008489A8 /* PathMorpher.xcdatamodeld */; };
+		03C83A112298F61F008489A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C83A102298F61F008489A8 /* Assets.xcassets */; };
+		03C83A142298F61F008489A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C83A122298F61F008489A8 /* LaunchScreen.storyboard */; };
+		03C83A1F2298F61F008489A8 /* PathMorpherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A1E2298F61F008489A8 /* PathMorpherTests.swift */; };
+		03C83A2A2298F65E008489A8 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A292298F65E008489A8 /* FileService.swift */; };
+		03C83A2C2298FDB5008489A8 /* PolygonListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A2B2298FDB5008489A8 /* PolygonListTableViewCell.swift */; };
+		03C83A312298FFDA008489A8 /* EditPolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A2D2298FFDA008489A8 /* EditPolygonViewController.swift */; };
+		03C83A322298FFDA008489A8 /* CGPoint+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A2E2298FFDA008489A8 /* CGPoint+Distance.swift */; };
+		03C83A332298FFDA008489A8 /* PolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A2F2298FFDA008489A8 /* PolygonView.swift */; };
+		03C83A342298FFDA008489A8 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A302298FFDA008489A8 /* Polygon.swift */; };
+		03C83A362299023C008489A8 /* UIResponder+firstparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A352299023C008489A8 /* UIResponder+firstparent.swift */; };
+		03C83A382299119E008489A8 /* MorphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C83A372299119E008489A8 /* MorphViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03C83A1B2298F61F008489A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03C839FB2298F61D008489A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03C83A022298F61D008489A8;
+			remoteInfo = PathMorpher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C83A032298F61D008489A8 /* PathMorpher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathMorpher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C83A062298F61D008489A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03C83A082298F61D008489A8 /* PolygonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonListViewController.swift; sourceTree = "<group>"; };
+		03C83A0B2298F61D008489A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03C83A0E2298F61D008489A8 /* PathMorpher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PathMorpher.xcdatamodel; sourceTree = "<group>"; };
+		03C83A102298F61F008489A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03C83A132298F61F008489A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03C83A152298F61F008489A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C83A1A2298F61F008489A8 /* PathMorpherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PathMorpherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C83A1E2298F61F008489A8 /* PathMorpherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMorpherTests.swift; sourceTree = "<group>"; };
+		03C83A202298F61F008489A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C83A292298F65E008489A8 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		03C83A2B2298FDB5008489A8 /* PolygonListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonListTableViewCell.swift; sourceTree = "<group>"; };
+		03C83A2D2298FFDA008489A8 /* EditPolygonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPolygonViewController.swift; sourceTree = "<group>"; };
+		03C83A2E2298FFDA008489A8 /* CGPoint+Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Distance.swift"; sourceTree = "<group>"; };
+		03C83A2F2298FFDA008489A8 /* PolygonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonView.swift; sourceTree = "<group>"; };
+		03C83A302298FFDA008489A8 /* Polygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		03C83A352299023C008489A8 /* UIResponder+firstparent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+firstparent.swift"; sourceTree = "<group>"; };
+		03C83A372299119E008489A8 /* MorphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03C83A002298F61D008489A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C83A172298F61F008489A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C839FA2298F61D008489A8 = {
+			isa = PBXGroup;
+			children = (
+				03C83A052298F61D008489A8 /* PathMorpher */,
+				03C83A1D2298F61F008489A8 /* PathMorpherTests */,
+				03C83A042298F61D008489A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03C83A042298F61D008489A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03C83A032298F61D008489A8 /* PathMorpher.app */,
+				03C83A1A2298F61F008489A8 /* PathMorpherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03C83A052298F61D008489A8 /* PathMorpher */ = {
+			isa = PBXGroup;
+			children = (
+				03C83A062298F61D008489A8 /* AppDelegate.swift */,
+				03C83A082298F61D008489A8 /* PolygonListViewController.swift */,
+				03C83A2B2298FDB5008489A8 /* PolygonListTableViewCell.swift */,
+				03C83A292298F65E008489A8 /* FileService.swift */,
+				03C83A302298FFDA008489A8 /* Polygon.swift */,
+				03C83A2F2298FFDA008489A8 /* PolygonView.swift */,
+				03C83A2D2298FFDA008489A8 /* EditPolygonViewController.swift */,
+				03C83A2E2298FFDA008489A8 /* CGPoint+Distance.swift */,
+				03C83A352299023C008489A8 /* UIResponder+firstparent.swift */,
+				03C83A372299119E008489A8 /* MorphViewController.swift */,
+				03C83A0A2298F61D008489A8 /* Main.storyboard */,
+				03C83A102298F61F008489A8 /* Assets.xcassets */,
+				03C83A122298F61F008489A8 /* LaunchScreen.storyboard */,
+				03C83A152298F61F008489A8 /* Info.plist */,
+				03C83A0D2298F61D008489A8 /* PathMorpher.xcdatamodeld */,
+			);
+			path = PathMorpher;
+			sourceTree = "<group>";
+		};
+		03C83A1D2298F61F008489A8 /* PathMorpherTests */ = {
+			isa = PBXGroup;
+			children = (
+				03C83A1E2298F61F008489A8 /* PathMorpherTests.swift */,
+				03C83A202298F61F008489A8 /* Info.plist */,
+			);
+			path = PathMorpherTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03C83A022298F61D008489A8 /* PathMorpher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C83A232298F61F008489A8 /* Build configuration list for PBXNativeTarget "PathMorpher" */;
+			buildPhases = (
+				03C839FF2298F61D008489A8 /* Sources */,
+				03C83A002298F61D008489A8 /* Frameworks */,
+				03C83A012298F61D008489A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PathMorpher;
+			productName = PathMorpher;
+			productReference = 03C83A032298F61D008489A8 /* PathMorpher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03C83A192298F61F008489A8 /* PathMorpherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C83A262298F61F008489A8 /* Build configuration list for PBXNativeTarget "PathMorpherTests" */;
+			buildPhases = (
+				03C83A162298F61F008489A8 /* Sources */,
+				03C83A172298F61F008489A8 /* Frameworks */,
+				03C83A182298F61F008489A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03C83A1C2298F61F008489A8 /* PBXTargetDependency */,
+			);
+			name = PathMorpherTests;
+			productName = PathMorpherTests;
+			productReference = 03C83A1A2298F61F008489A8 /* PathMorpherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03C839FB2298F61D008489A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = com.josh;
+				TargetAttributes = {
+					03C83A022298F61D008489A8 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					03C83A192298F61F008489A8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 03C83A022298F61D008489A8;
+					};
+				};
+			};
+			buildConfigurationList = 03C839FE2298F61D008489A8 /* Build configuration list for PBXProject "PathMorpher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03C839FA2298F61D008489A8;
+			productRefGroup = 03C83A042298F61D008489A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03C83A022298F61D008489A8 /* PathMorpher */,
+				03C83A192298F61F008489A8 /* PathMorpherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03C83A012298F61D008489A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C83A142298F61F008489A8 /* LaunchScreen.storyboard in Resources */,
+				03C83A112298F61F008489A8 /* Assets.xcassets in Resources */,
+				03C83A0C2298F61D008489A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C83A182298F61F008489A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03C839FF2298F61D008489A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C83A322298FFDA008489A8 /* CGPoint+Distance.swift in Sources */,
+				03C83A312298FFDA008489A8 /* EditPolygonViewController.swift in Sources */,
+				03C83A0F2298F61D008489A8 /* PathMorpher.xcdatamodeld in Sources */,
+				03C83A382299119E008489A8 /* MorphViewController.swift in Sources */,
+				03C83A2C2298FDB5008489A8 /* PolygonListTableViewCell.swift in Sources */,
+				03C83A2A2298F65E008489A8 /* FileService.swift in Sources */,
+				03C83A342298FFDA008489A8 /* Polygon.swift in Sources */,
+				03C83A092298F61D008489A8 /* PolygonListViewController.swift in Sources */,
+				03C83A362299023C008489A8 /* UIResponder+firstparent.swift in Sources */,
+				03C83A072298F61D008489A8 /* AppDelegate.swift in Sources */,
+				03C83A332298FFDA008489A8 /* PolygonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C83A162298F61F008489A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C83A1F2298F61F008489A8 /* PathMorpherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03C83A1C2298F61F008489A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03C83A022298F61D008489A8 /* PathMorpher */;
+			targetProxy = 03C83A1B2298F61F008489A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03C83A0A2298F61D008489A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C83A0B2298F61D008489A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03C83A122298F61F008489A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C83A132298F61F008489A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03C83A212298F61F008489A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03C83A222298F61F008489A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03C83A242298F61F008489A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = PathMorpher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.PathMorpher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03C83A252298F61F008489A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = PathMorpher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.PathMorpher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03C83A272298F61F008489A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = PathMorpherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.PathMorpherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathMorpher.app/PathMorpher";
+			};
+			name = Debug;
+		};
+		03C83A282298F61F008489A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4WMJSL77G;
+				INFOPLIST_FILE = PathMorpherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = josh.PathMorpherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PathMorpher.app/PathMorpher";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03C839FE2298F61D008489A8 /* Build configuration list for PBXProject "PathMorpher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C83A212298F61F008489A8 /* Debug */,
+				03C83A222298F61F008489A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C83A232298F61F008489A8 /* Build configuration list for PBXNativeTarget "PathMorpher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C83A242298F61F008489A8 /* Debug */,
+				03C83A252298F61F008489A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C83A262298F61F008489A8 /* Build configuration list for PBXNativeTarget "PathMorpherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C83A272298F61F008489A8 /* Debug */,
+				03C83A282298F61F008489A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03C83A0D2298F61D008489A8 /* PathMorpher.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03C83A0E2298F61D008489A8 /* PathMorpher.xcdatamodel */,
+			);
+			currentVersion = 03C83A0E2298F61D008489A8 /* PathMorpher.xcdatamodel */;
+			path = PathMorpher.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03C839FB2298F61D008489A8 /* Project object */;
+}
